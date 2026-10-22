@@ -7,7 +7,12 @@
 <p align="center">The goal app that turns your year into a galaxy. Light up all 365 days.</p>
 
 <p align="center">
-  <img src="marketing/screens/today.png" alt="The Today screen: a 3D orbit of the year's 365 days next to a grid of every day" />
+  <a href="../../releases/latest"><img src="https://img.shields.io/github/v/release/GoLuxo/beyond-human?style=for-the-badge&label=Download&color=000000" alt="Download the latest release" /></a>
+  <a href="https://buymeacoffee.com/GoLuxo"><img src="https://img.shields.io/badge/Buy%20me%20a%20coffee-GoLuxo-000000?style=for-the-badge&logo=buymeacoffee&logoColor=white" alt="Buy me a coffee" /></a>
+</p>
+
+<p align="center">
+  <img src="docs/screenshots/today.png" alt="The Today screen: a 3D orbit of the year's 365 days next to a grid of every day" />
 </p>
 
 Beyond Human is a Windows app for goals, habits, focus and daily planning. Every day you show up becomes a star in a real-time 3D orbit of your year, rendered on the GPU with WebGPU.
@@ -38,10 +43,10 @@ The installer isn't code-signed yet, so the first time Windows SmartScreen shows
 Shortcuts: `Ctrl+K` command palette (anything that isn't a command becomes a task), `Ctrl+N` new task, `Ctrl+1` to `Ctrl+9` jump between screens, `Space` starts or pauses the focus timer.
 
 <p align="center">
-  <img src="marketing/screens/year-orbit.png" width="49%" alt="The 365 screen in orbit mode" />
-  <img src="marketing/screens/focus.png" width="49%" alt="The focus timer" />
-  <img src="marketing/screens/achievements.png" width="49%" alt="Achievements and ranks" />
-  <img src="marketing/screens/insights.png" width="49%" alt="Insights charts" />
+  <img src="docs/screenshots/year-orbit.png" width="49%" alt="The 365 screen in orbit mode" />
+  <img src="docs/screenshots/focus.png" width="49%" alt="The focus timer" />
+  <img src="docs/screenshots/achievements.png" width="49%" alt="Achievements and ranks" />
+  <img src="docs/screenshots/insights.png" width="49%" alt="Insights charts" />
 </p>
 
 ## Graphics
@@ -75,7 +80,6 @@ npm run dev
 | `npm run start` | Production build running in Electron |
 | `npm run dist` | Icons, build and the Windows installer in `release/` |
 | `npm run icons` | Regenerates every icon from the logo in `scripts/make-icons.mjs` |
-| `npm run marketing` | Renders the still ads in `marketing/` from their HTML templates |
 
 ### Releasing
 
@@ -98,13 +102,15 @@ src/state/           store, actions, achievement and level watcher
 src/lib/             dates, XP and streaks, sound, focus timer, share card, platform bridge
 src/components/      orbit, grids, modals, charts, title bar, sidebar
 src/views/           one file per screen
-marketing/           ads, promo videos, screenshots and their templates
+docs/screenshots/    screenshots used in this README
 build/               icons and installer customisation
 ```
 
-## Marketing kit
+## Support
 
-[`marketing/`](marketing/README.md) holds a 29-second promo in vertical (Reels, TikTok, Shorts) and landscape (YouTube) cuts, Instagram post and story ads, a YouTube thumbnail and channel banner, screenshots, and ready-to-post captions and hashtags.
+Beyond Human is made by one person. If it helps you show up every day, you can support it here:
+
+<a href="https://buymeacoffee.com/GoLuxo"><img src="https://img.shields.io/badge/Buy%20me%20a%20coffee-GoLuxo-000000?style=for-the-badge&logo=buymeacoffee&logoColor=white" alt="Buy me a coffee" /></a>
 
 ## License
 

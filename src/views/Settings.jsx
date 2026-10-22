@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { Moon, Sun, Bell, Download, Upload, FolderOpen, Trash2 } from 'lucide-react';
+import { Moon, Sun, Bell, Download, Upload, FolderOpen, Trash2, Coffee } from 'lucide-react';
 import { useAppState, getState, replaceState, defaultState, isValidBackup } from '../state/store.js';
 import { updateProfile, updateSettings, updateNotifications } from '../state/actions.js';
 import { Switch, Segmented, InlineEdit } from '../components/ui.jsx';
@@ -216,6 +216,15 @@ export default function Settings() {
           </Row>
           <Row title="Keep running in the tray" desc="Closing the window keeps reminders coming.">
             <Switch checked={settings.minimizeToTray} onChange={(minimizeToTray) => updateSettings({ minimizeToTray })} label="Keep running in the tray" />
+          </Row>
+        </section>
+
+        <section className="panel set-group span-2">
+          <h3>Support Beyond Human</h3>
+          <Row title="Buy me a coffee" desc="Beyond Human is made by one person. If it helps you show up every day, a coffee keeps it growing.">
+            <a className="btn btn-sm btn-primary" href="https://buymeacoffee.com/GoLuxo" target="_blank" rel="noreferrer">
+              <Coffee /> Buy me a coffee
+            </a>
           </Row>
         </section>
 

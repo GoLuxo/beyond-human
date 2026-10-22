@@ -13,7 +13,6 @@
     "start": "vite build && electron .",
     "icons": "node scripts/make-icons.mjs",
     "dist": "install-electron && npm run icons && npm run notices && vite build && electron-builder --win --x64",
-    "marketing": "install-electron && electron scripts/render-marketing.cjs",
     "notices": "node scripts/third-party-notices.mjs"
   },
   "build": {

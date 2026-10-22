@@ -644,3 +644,7 @@ input[type='date']::-webkit-calendar-picker-indicator {
   color: var(--silver);
   font-family: var(--body);
 }
+
+a.btn {
+  text-decoration: none;
+}
