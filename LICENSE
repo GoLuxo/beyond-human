@@ -1,5 +1,90 @@
-Copyright (c) 2026 Beyond Human. All rights reserved.
+Beyond Human License
+Version 1.0, October 2026
 
-This software and its source code are proprietary. No permission is granted to
-use, copy, modify, merge, publish, distribute, sublicense or sell copies of it
-without prior written permission from the copyright holder.
+Copyright (c) 2026 GoLuxo. All rights reserved.
+
+This license governs the Beyond Human application, including its source code,
+compiled builds, graphics, sounds, icons, marketing materials and documentation
+(together, the "Software"), made available by GoLuxo (the "Owner"). By viewing,
+downloading, installing or using the Software you agree to these terms. If you
+do not agree, do not use the Software.
+
+1. WHAT YOU MAY DO
+
+   a. Use. You may download official builds of the Software from the Owner's
+      official channels and install and use them on any number of devices for
+      your own personal or internal business purposes.
+
+   b. Read the source. You may view and study the source code published in the
+      official repository, and you may fork the repository on GitHub solely to
+      propose changes back to the Owner through pull requests.
+
+   c. Share links. You may share links to the official repository, the
+      official releases page and the Owner's official social media.
+
+2. WHAT YOU MAY NOT DO
+
+   Without the Owner's prior written permission, you may not:
+
+   a. copy, publish, distribute, sell, rent, lease, sublicense or otherwise make
+      available the Software or any part of it, in source or compiled form,
+      except through the links allowed in section 1(c);
+   b. build, publish or distribute modified versions or derivative works of the
+      Software, including builds made from forks;
+   c. use the Software, or any substantial part of its code, design or assets,
+      to create a competing product or service;
+   d. remove, obscure or alter any copyright, license or attribution notice;
+   e. use the Software in any way that breaks applicable law.
+
+3. NAMES AND LOGOS
+
+   "Beyond Human", the Beyond Human logo and related names, logos and visual
+   identity belong to the Owner. This license grants no right to use them,
+   except to refer truthfully to the official Software.
+
+4. CONTRIBUTIONS
+
+   If you submit a pull request, issue, suggestion or other contribution, you
+   confirm that you have the right to do so, and you grant the Owner a
+   perpetual, worldwide, royalty-free, irrevocable license to use, modify and
+   distribute that contribution as part of the Software or otherwise, without
+   payment or attribution.
+
+5. THIRD-PARTY COMPONENTS
+
+   The Software includes open-source components that remain under their own
+   licenses, listed in THIRD_PARTY_NOTICES.md. Nothing in this license limits
+   your rights under those licenses for those components.
+
+6. YOUR DATA
+
+   The Software stores your goals, habits, journal and other content on your
+   own device. The Owner does not collect that content. You are responsible
+   for backing it up.
+
+7. NO WARRANTY
+
+   THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+   IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+   FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT.
+
+8. LIMITATION OF LIABILITY
+
+   TO THE MAXIMUM EXTENT PERMITTED BY LAW, IN NO EVENT SHALL THE OWNER BE LIABLE
+   FOR ANY CLAIM, DAMAGES, LOSS OF DATA OR OTHER LIABILITY, WHETHER IN AN ACTION
+   OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH
+   THE SOFTWARE OR ITS USE.
+
+9. TERMINATION
+
+   This license ends automatically if you break any of its terms. When it ends,
+   you must stop using the Software and delete all copies you control.
+   Sections 3, 4, 7 and 8 continue to apply after it ends.
+
+10. CHANGES
+
+   The Owner may publish new versions of this license. Each release of the
+   Software is governed by the license version included with it.
+
+For permissions beyond this license, contact the Owner through
+https://github.com/GoLuxo.

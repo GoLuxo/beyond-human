@@ -3,8 +3,8 @@
   "productName": "Beyond Human",
   "version": "1.2.0",
   "description": "Set goals, plan your days and light up all 365 of them.",
-  "author": "Beyond Human",
-  "license": "UNLICENSED",
+  "author": "GoLuxo",
+  "license": "SEE LICENSE IN LICENSE",
   "private": true,
   "main": "electron/main.js",
   "scripts": {
@@ -12,13 +12,14 @@
     "build": "vite build",
     "start": "vite build && electron .",
     "icons": "node scripts/make-icons.mjs",
-    "dist": "install-electron && npm run icons && vite build && electron-builder --win --x64",
-    "marketing": "install-electron && electron scripts/render-marketing.cjs"
+    "dist": "install-electron && npm run icons && npm run notices && vite build && electron-builder --win --x64",
+    "marketing": "install-electron && electron scripts/render-marketing.cjs",
+    "notices": "node scripts/third-party-notices.mjs"
   },
   "build": {
     "appId": "com.beyondhuman.app",
     "productName": "Beyond Human",
-    "copyright": "Copyright © 2026 Beyond Human",
+    "copyright": "Copyright © 2026 GoLuxo",
     "electronDist": "node_modules/electron/dist",
     "directories": {
       "output": "release",
@@ -51,8 +52,19 @@
       "installerIcon": "build/icon.ico",
       "uninstallerIcon": "build/icon.ico",
       "include": "build/installer.nsh",
-      "artifactName": "Beyond-Human-Setup-${version}.${ext}"
-    }
+      "artifactName": "Beyond-Human-Setup-${version}.${ext}",
+      "license": "LICENSE"
+    },
+    "extraFiles": [
+      {
+        "from": "LICENSE",
+        "to": "LICENSE.txt"
+      },
+      {
+        "from": "THIRD_PARTY_NOTICES.md",
+        "to": "THIRD_PARTY_NOTICES.md"
+      }
+    ]
   },
   "dependencies": {
     "@fontsource-variable/geist": "^5.3.0",

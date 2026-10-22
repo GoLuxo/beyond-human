@@ -108,4 +108,10 @@ build/               icons and installer customisation
 
 ## License
 
-Copyright © 2026 Beyond Human. All rights reserved. See [LICENSE](LICENSE).
+Beyond Human is **source-available, not open source**. Copyright © 2026 GoLuxo.
+
+- You may download the official builds and use them on your own devices.
+- You may read the source code and fork this repository to send pull requests.
+- You may not redistribute the app or publish your own builds or modified versions, and the Beyond Human name and logo are reserved.
+
+The full terms are in [LICENSE](LICENSE), and installers ask you to accept them. Open-source components keep their own licenses, listed in [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md), which `npm run notices` regenerates (the `dist` build does this automatically).
