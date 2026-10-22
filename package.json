@@ -1,0 +1,81 @@
+{
+  "name": "beyond-human",
+  "productName": "Beyond Human",
+  "version": "1.2.0",
+  "description": "Set goals, plan your days and light up all 365 of them.",
+  "author": "Beyond Human",
+  "license": "UNLICENSED",
+  "private": true,
+  "main": "electron/main.js",
+  "scripts": {
+    "dev": "concurrently -k -n vite,app \"vite\" \"wait-on tcp:5173 && electron . --dev-server=http://localhost:5173\"",
+    "build": "vite build",
+    "start": "vite build && electron .",
+    "icons": "node scripts/make-icons.mjs",
+    "dist": "install-electron && npm run icons && vite build && electron-builder --win --x64",
+    "marketing": "install-electron && electron scripts/render-marketing.cjs"
+  },
+  "build": {
+    "appId": "com.beyondhuman.app",
+    "productName": "Beyond Human",
+    "copyright": "Copyright © 2026 Beyond Human",
+    "electronDist": "node_modules/electron/dist",
+    "directories": {
+      "output": "release",
+      "buildResources": "build"
+    },
+    "files": [
+      "dist/**/*",
+      "electron/**/*",
+      "shared/**/*",
+      "package.json"
+    ],
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "icon": "build/icon.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true,
+      "createDesktopShortcut": true,
+      "createStartMenuShortcut": true,
+      "shortcutName": "Beyond Human",
+      "installerIcon": "build/icon.ico",
+      "uninstallerIcon": "build/icon.ico",
+      "include": "build/installer.nsh",
+      "artifactName": "Beyond-Human-Setup-${version}.${ext}"
+    }
+  },
+  "dependencies": {
+    "@fontsource-variable/geist": "^5.3.0",
+    "@fontsource-variable/unbounded": "^5.3.0",
+    "framer-motion": "^14.4.0",
+    "gsap": "^3.15.0",
+    "immer": "^11.2.3",
+    "lucide-react": "^1.60.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "three": "^0.186.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^6.1.2",
+    "concurrently": "^10.0.6",
+    "electron": "^44.9.2",
+    "electron-builder": "^26.15.3",
+    "png-to-ico": "^3.0.2",
+    "sharp": "^0.35.5",
+    "vite": "^8.3.4",
+    "wait-on": "^9.5.1"
+  },
+  "allowScripts": {
+    "electron-winstaller": false
+  }
+}
